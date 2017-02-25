@@ -5,7 +5,7 @@
 ---
 <img src=https://raw.githubusercontent.com/dnajs/dna.js/master/website/static/graphics/dnajs-logo.png align=right>
 
-Steps:
+Build the project by running `build.sh.command` or by using the commands:
 
     $ cd webpack-to-do-list
     $ npm update
@@ -20,18 +20,18 @@ The build process creates the `dist` folder:
           bundle.js
           index.html
 
-For a [webpack](https://webpack.js.org) project that depends on the [dna.js](http://dnajs.org)
-library, use `require` to pull the library's CSS and JavaScript:
+[webpack](https://webpack.js.org) treats the [dna.js](http://dnajs.org) library as a module.&nbsp;
+Use `require` statements in your application to pull in the library's CSS and JavaScript:
 
     require('dna.js/dna.css');
     var $ = require('jquery');
     var dna = require('dna.js')(window, $);
 
-Then, use `dna.registerContext()` to expose your application so its functions can be used as
-callbacks from web pages:
+Then, use `dna.registerContext(appName, appObject)` to expose your application so its functions can
+be used as callbacks from web pages:
 
-    var app = { doSomething: function() { ... } };
-    dna.registerContext('app', app);
+    var myApp = { doSomething: function() { ... } };
+    dna.registerContext('myApp', myApp);
 
 See the example code in [app.js](src/js/app.js).
 
