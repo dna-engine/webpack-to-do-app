@@ -27,11 +27,13 @@ library, use `require` to pull the library's CSS and JavaScript:
     var $ = require('jquery');
     var dna = require('dna.js')(window, $);
 
-Also, use `dna.registerContext()` to expose your application so its functions can be used as
+Then, use `dna.registerContext()` to expose your application so its functions can be used as
 callbacks from web pages:
 
     var app = { doSomething: function() { ... } };
     dna.registerContext('app', app);
+
+See the example code in [app.js](blob/master/src/js/app.js).
 
 ===
 [MIT license](http://dnajs.org/license)
