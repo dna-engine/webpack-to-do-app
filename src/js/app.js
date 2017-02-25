@@ -1,4 +1,4 @@
-// dna.js webpack To Do List Application
+// webpack-to-do-list
 
 // bundle.css
 require('dna.js/dna.css');
