@@ -33,7 +33,7 @@ callbacks from web pages:
     var app = { doSomething: function() { ... } };
     dna.registerContext('app', app);
 
-See the example code in [app.js](blob/master/src/js/app.js).
+See the example code in [app.js](src/js/app.js).
 
 ===
 [MIT license](http://dnajs.org/license)
