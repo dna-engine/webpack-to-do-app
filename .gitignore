@@ -1,0 +1,6 @@
+# Generated and downloaded files
+/node_modules/
+/dist/
+
+# Extraneous system files
+.DS_Store
