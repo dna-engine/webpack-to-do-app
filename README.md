@@ -3,7 +3,8 @@
 *Sample "To Do" application powered by dna.js and built with webpack*
 
 ---
-<img src=https://raw.githubusercontent.com/dnajs/dna.js/master/website/static/graphics/dnajs-logo.png align=right>
+<img src=https://raw.githubusercontent.com/dnajs/dna.js/master/website/static/graphics/dnajs-logo.png
+   width=100 align=right>
 
 Build the project by running `build.sh.command` or by using the commands:
 
@@ -27,7 +28,7 @@ Use `require` statements in your application to pull in the library's CSS and Ja
     var $ = require('jquery');
     var dna = require('dna.js')(window, $);
 
-Then, use `dna.registerContext(appName, appObject)` to expose your application so its functions can
+Then use `dna.registerContext(appName, appObject)` to expose your application so its functions can
 be used as callbacks from web pages:
 
     var myApp = { doSomething: function() { ... } };
