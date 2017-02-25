@@ -1,3 +1,5 @@
+// dna.js webpack To Do List Application
+
 // bundle.css
 require('dna.js/dna.css');
 require('../css/style.css');

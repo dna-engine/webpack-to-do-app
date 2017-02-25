@@ -1,7 +1,9 @@
 #!/bin/sh
 
+# webpack-to-do-list
+#
 # To make this file runnable:
-#     $ chmod +x task-runner.sh.command
+#     $ chmod +x build.sh.command
 
 projectHome=$(cd $(dirname $0); pwd)
 

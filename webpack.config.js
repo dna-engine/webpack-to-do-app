@@ -1,4 +1,4 @@
-// dna.js webpack To Do List Application
+// webpack-to-do-list
 
 const path              = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
