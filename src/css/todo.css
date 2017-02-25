@@ -1,0 +1,22 @@
+.tasks .task {
+   max-width: 400px;
+   background-color: lightblue;
+   padding: 8px 10px;
+   margin-top: 5px;
+   }
+.tasks .task span {
+   transition: color 0.4s;
+   }
+.tasks .task .strike {
+   text-decoration: line-through;
+   color: gray;
+   }
+.tasks .task button {
+   float: right;
+   transition: opacity 0.4s;
+   }
+.tasks .task:first-child button[data-click=dna\.up],
+.tasks .task:last-child  button[data-click=dna\.down] {
+   opacity: 0.5;
+   pointer-events: none;
+   }
