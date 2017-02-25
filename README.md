@@ -36,4 +36,4 @@ be used as callbacks from web pages:
 See the example code in [app.js](src/js/app.js).
 
 ===
-[MIT license](http://dnajs.org/license)
+[MIT license](LICENSE.txt)
