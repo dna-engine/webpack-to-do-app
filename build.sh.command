@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# webpack-to-do-list
+# dnajs-webpack-to-do-app
 #
 # To make this file runnable:
 #     $ chmod +x build.sh.command

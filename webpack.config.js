@@ -1,4 +1,4 @@
-// webpack-to-do-list
+// dnajs-webpack-to-do-app
 
 const path              = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');

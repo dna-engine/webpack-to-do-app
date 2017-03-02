@@ -1,4 +1,4 @@
-### webpack To Do List
+### dna.js webpack To Do App
 
 *Sample "To Do" application powered by dna.js and built with webpack*
 
@@ -8,14 +8,14 @@
 
 Build the project by running `build.sh.command` or by using the commands:
 
-    $ cd webpack-to-do-list
+    $ cd dnajs-webpack-to-do-app
     $ npm update
     $ npm run build
     $ open dist/index.html
 
 The build process creates the `dist` folder:
 
-    webpack-to-do-list/
+    dnajs-webpack-to-do-app/
        dist/
           bundle.css
           bundle.js
