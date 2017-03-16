@@ -40,5 +40,5 @@ dna.registerContext('myApp', myApp);
 
 See the example code in [app.js](src/js/app.js).
 
-===
-[MIT license](LICENSE.txt)
+---
+[MIT License](LICENSE.txt)
