@@ -1,24 +1,26 @@
 {
    "name":        "dnajs-webpack-to-do-app",
-   "version":     "1.0.0",
    "description": "Sample To Do application powered by dna.js and built with webpack",
-   "main":        "app.js",
-   "keywords":    ["dnajs", "webpack", "todo", "nodejs", "javascript"],
-   "homepage":    "https://github.com/dnajs/dnajs-webpack-to-do-app",
+   "version":     "1.0.0",
    "license":     "MIT",
+   "main":        "app.js",
+   "repository":  "dnajs/dnajs-webpack-to-do-app",
+   "homepage":    "https://github.com/dnajs/dnajs-webpack-to-do-app",
+   "bugs":        "https://github.com/dnajs/dnajs-webpack-to-do-app/issues",
+   "docs":        "http://dnajs.org/docs",
+   "keywords":    ["dnajs", "webpack", "todo", "nodejs", "javascript"],
    "author":      { "name": "Center Key", "url": "http://centerkey.com" },
-   "repository":  { "type": "git",        "url": "https://github.com/dnajs/dnajs-webpack-to-do-app.git" },
+   "scripts": {
+      "build": "webpack"
+   },
    "dependencies": {
       "dna.js": "~1.2"
    },
    "devDependencies": {
-      "css-loader":                  "~0.26",
-      "extract-text-webpack-plugin": "~2.0",
+      "css-loader":                  "~0.28",
+      "extract-text-webpack-plugin": "~2.1",
       "html-webpack-plugin":         "~2.28",
       "raw-loader":                  "~0.5",
-      "webpack":                     "~2.2"
-   },
-   "scripts": {
-      "build": "webpack"
+      "webpack":                     "~2.6"
    }
 }
