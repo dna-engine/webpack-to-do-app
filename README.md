@@ -1,10 +1,9 @@
-### dna.js webpack To Do App
-
+# dna.js webpack To Do App
+<img src=https://raw.githubusercontent.com/dnajs/dna.js/master/website/static/graphics/dnajs-logo.png
+   align=right width=160 alt=logo>
 *Sample "To Do" application powered by dna.js and built with webpack*
 
----
-<img src=https://raw.githubusercontent.com/dnajs/dna.js/master/website/static/graphics/dnajs-logo.png
-   width=100 align=right>
+[![Build Status](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app.svg)](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app)
 
 Build the project by running `build.sh.command` or by using the commands:
 ```
