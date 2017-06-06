@@ -11,7 +11,16 @@
    "keywords":    ["dnajs", "webpack", "todo", "nodejs", "javascript"],
    "author":      { "name": "Center Key", "url": "http://centerkey.com" },
    "scripts": {
-      "build": "webpack"
+      "pretest": "webpack",
+      "test":    "jshint *.js src/js/*.js"
+   },
+   "jshintConfig": {
+      "esversion": 6,
+      "strict":    "implied",
+      "node":      true,
+      "undef":     true,
+      "unused":    true,
+      "globals":   { "window": false }
    },
    "dependencies": {
       "dna.js": "~1.2"
@@ -20,6 +29,7 @@
       "css-loader":                  "~0.28",
       "extract-text-webpack-plugin": "~2.1",
       "html-webpack-plugin":         "~2.28",
+      "jshint":                      "~2.9",
       "raw-loader":                  "~0.5",
       "webpack":                     "~2.6"
    }

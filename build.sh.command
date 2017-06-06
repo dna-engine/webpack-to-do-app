@@ -7,22 +7,23 @@
 
 projectHome=$(cd $(dirname $0); pwd)
 
-setup() {
+info() {
    cd $projectHome
    pwd
    echo
-   echo "npm:"
-   which npm || echo "Need to install npm: https://nodejs.org"
-   npm --version
-   echo
+   echo "Node.js:"
+   which node || { echo "Need to install Node.js: https://nodejs.org"; exit; }
+   node --version
+   test -d node_modules || npm install
    npm update
+   npm outdated
    echo
    }
 
 build() {
    cd $projectHome
    echo "webpack.config.js:"
-   npm run build
+   npm test
    echo
    echo "Dist folder:"
    cd dist
@@ -35,5 +36,5 @@ build() {
 echo
 echo "Build"
 echo "====="
-setup
+info
 build
