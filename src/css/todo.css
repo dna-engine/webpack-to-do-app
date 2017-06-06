@@ -17,8 +17,8 @@
    float: right;
    transition: opacity 0.4s;
    }
-.tasks .task:first-child button[data-click=dna\.up],
-.tasks .task:last-child  button[data-click=dna\.down] {
+.task:first-of-type button:nth-child(4),
+.task:last-of-type  button:nth-child(3) {
    opacity: 0.5;
    pointer-events: none;
    }
