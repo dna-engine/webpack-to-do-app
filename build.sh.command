@@ -8,6 +8,7 @@
 projectHome=$(cd $(dirname $0); pwd)
 
 info() {
+   # Check for Node.js installation and download project dependencies
    cd $projectHome
    pwd
    echo
