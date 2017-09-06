@@ -1,7 +1,8 @@
 # dnajs-webpack-to-do-app
 
-# Generated and downloaded files
+# Downloaded and generated files
 /node_modules/
+/package-lock.json
 /dist/
 
 # Extraneous system files
