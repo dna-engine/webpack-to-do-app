@@ -1,10 +1,11 @@
 // dnajs-webpack-to-do-app
 
-const path              = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path =                 require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin =    require('html-webpack-plugin');
 
 module.exports = {
+   mode: 'development',
    entry: ['./src/index.html', './src/js/app.js'],
    output: {
       filename: 'bundle.js',
@@ -12,12 +13,12 @@ module.exports = {
       },
    module: {
       rules: [
-         { test: /\.css$/, use: ExtractTextPlugin.extract({ use: 'css-loader' }) },
+         { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
          { test: /\.html$/, loader: 'raw-loader' }
          ]
       },
    plugins: [
-      new ExtractTextPlugin('bundle.css'),
+      new MiniCssExtractPlugin({ filename: 'bundle.css' }),
       new HtmlWebpackPlugin({ template: 'src/index.html' })
       ]
    };
