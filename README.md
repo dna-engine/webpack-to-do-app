@@ -22,7 +22,7 @@ dnajs-webpack-to-do-app/
       index.html
 ```
 
-[webpack](https://webpack.js.org) treats the [dna.js](http://dnajs.org) library as a module.&nbsp;
+[webpack](https://webpack.js.org) treats the [dna.js](https://dnajs.org) library as a module.&nbsp;
 Use `require` statements in your application to pull in the library's CSS and JavaScript:
 ```javascript
 require('dna.js/dna.css');
