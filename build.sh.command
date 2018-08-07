@@ -7,7 +7,7 @@
 
 projectHome=$(cd $(dirname $0); pwd)
 
-info() {
+setupTools() {
    # Check for Node.js installation and download project dependencies
    cd $projectHome
    pwd
@@ -21,7 +21,7 @@ info() {
    echo
    }
 
-build() {
+buildProject() {
    cd $projectHome
    echo "webpack.config.js:"
    npm test
@@ -37,5 +37,5 @@ build() {
 echo
 echo "Build"
 echo "====="
-info
-build
+setupTools
+buildProject
