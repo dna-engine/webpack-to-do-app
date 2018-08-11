@@ -1,7 +1,7 @@
 # dnajs-webpack-to-do-app
-<img src=https://raw.githubusercontent.com/dnajs/dna.js/master/website/static/graphics/dnajs-logo.png
-   align=right width=160 alt=logo>
-*Sample "To Do" application powered by dna.js and built with webpack*
+<img src=https://dnajs.org/graphics/dnajs-logo.png align=right width=160 alt=logo>
+
+_Sample "To Do" application powered by dna.js and built with webpack_
 
 [![Build Status](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app.svg)](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app)
 
