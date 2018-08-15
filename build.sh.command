@@ -5,11 +5,14 @@
 # To make this file runnable:
 #     $ chmod +x build.sh.command
 
+banner="dnajs-webpack-to-do-app"
 projectHome=$(cd $(dirname $0); pwd)
 
 setupTools() {
-   # Check for Node.js installation and download project dependencies
    cd $projectHome
+   echo
+   echo $banner
+   echo $(echo $banner | sed -e "s/./=/g")
    pwd
    echo
    echo "Node.js:"
@@ -34,8 +37,5 @@ buildProject() {
    echo
    }
 
-echo
-echo "Build"
-echo "====="
 setupTools
 buildProject
