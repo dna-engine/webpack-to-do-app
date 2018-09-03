@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # dnajs-webpack-to-do-app
 #
