@@ -12,7 +12,7 @@ setupTools() {
    cd $projectHome
    echo
    echo $banner
-   echo $(echo $banner | sed -e "s/./=/g")
+   echo $(echo $banner | sed s/./=/g)
    pwd
    echo
    echo "Node.js:"
@@ -31,7 +31,7 @@ buildProject() {
    echo
    echo "Dist folder:"
    cd dist
-   ls -l
+   ls -o
    sleep 2
    open index.html
    echo
