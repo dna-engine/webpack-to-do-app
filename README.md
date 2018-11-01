@@ -3,7 +3,7 @@
 
 _Sample "To Do" application powered by dna.js and built with webpack_
 
-[![Build Status](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app.svg)](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app)
+[![Build](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app.svg)](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app)
 
 Build the project by running `build.sh.command` or by using the commands:
 ```
