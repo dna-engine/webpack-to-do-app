@@ -8,6 +8,7 @@
    "homepage": "https://github.com/dnajs/dnajs-webpack-to-do-app",
    "bugs": "https://github.com/dnajs/dnajs-webpack-to-do-app/issues",
    "docs": "https://dnajs.org/docs",
+   "author": "Center Key (https://centerkey.com)",
    "keywords": [
       "dnajs",
       "webpack",
@@ -15,10 +16,6 @@
       "nodejs",
       "javascript"
    ],
-   "author": {
-      "name": "Center Key",
-      "url": "https://centerkey.com"
-   },
    "scripts": {
       "pretest": "webpack",
       "test": "jshint *.js src/js/*.js"
@@ -42,7 +39,7 @@
       "jshint": "~2.9",
       "mini-css-extract-plugin": "~0.4",
       "raw-loader": "~0.5",
-      "webpack": "~4.21",
+      "webpack": "~4.23",
       "webpack-cli": "~3.1"
    }
 }
