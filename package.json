@@ -16,10 +16,6 @@
       "nodejs",
       "javascript"
    ],
-   "scripts": {
-      "pretest": "webpack",
-      "test": "jshint *.js src/js/*.js"
-   },
    "jshintConfig": {
       "esversion": 6,
       "strict": "implied",
@@ -27,6 +23,10 @@
       "unused": true,
       "browser": true,
       "node": true
+   },
+   "scripts": {
+      "pretest": "webpack",
+      "test": "jshint *.js src/js/*.js"
    },
    "dependencies": {
       "dna.js": "~1.4",
@@ -39,7 +39,7 @@
       "jshint": "~2.9",
       "mini-css-extract-plugin": "~0.4",
       "raw-loader": "~0.5",
-      "webpack": "~4.24",
+      "webpack": "~4.26",
       "webpack-cli": "~3.1"
    }
 }
