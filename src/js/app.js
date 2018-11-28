@@ -6,21 +6,21 @@ require('../css/style.css');
 require('../css/todo.css');
 
 // js libraries
-var $ = require('jquery');
-var dna = require('dna.js')(window, $);
+const $ =   require('jquery');
+const dna = require('dna.js')(window, $);
 dna.registerContext('dna', dna);  //expose dna.js utilities to be callbacks from web page
 
 // Application
-var todo = {
+const todo = {
    add: function() {  //create a task
-      var task = {
+      const task = {
          title: $('#task-title').val(),
          done:  false
          };
       dna.clone('task', task, { fade: true });
       },
    setup: function() {  //start with one task
-      var task = {
+      const task = {
          title: 'Check out: dnajs.org',
          done:  false
          };
