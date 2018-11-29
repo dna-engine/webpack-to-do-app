@@ -35,7 +35,9 @@ const dna = require('dna.js')(window, $);
 Then use `dna.registerContext(appName, appObject)` to expose your application so its functions can
 be used as callbacks from web pages:
 ```javascript
-const myApp = { doSomething: function() { ... } };
+const myApp = {
+   doSomething: function() { ... }
+   };
 dna.registerContext('myApp', myApp);
 ```
 
