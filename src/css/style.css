@@ -4,3 +4,7 @@ body {
    font-family: system-ui, sans-serif;
    margin: 30px;
    }
+body input {
+   font-size: 1.2rem;
+   background-color: aliceblue;
+   }

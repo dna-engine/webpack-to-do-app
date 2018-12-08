@@ -17,8 +17,8 @@
    float: right;
    transition: opacity 0.4s;
    }
-.task:first-of-type button:nth-child(4),
-.task:last-of-type  button:nth-child(3) {
+.tasks .task:first-of-type button:nth-child(4),
+.tasks .task:last-of-type  button:nth-child(3) {
    opacity: 0.5;
    pointer-events: none;
    }
