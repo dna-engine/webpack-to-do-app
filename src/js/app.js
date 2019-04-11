@@ -19,9 +19,10 @@ const todo = {
          };
       dna.clone('task', task, { fade: true });
       },
-   setup: () => {  //start with one task
-      const task = {
-         title: 'Check out: dnajs.org',
+   setup: () => {
+      $('#task-title').val('Launch 🚀');
+      const task = {  //start with one task
+         title: 'Check out: 🧬 dna.js.org',
          done:  false
          };
       dna.clone('task', task);
