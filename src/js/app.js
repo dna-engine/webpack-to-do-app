@@ -12,14 +12,14 @@ dna.registerContext('dna', dna);  //expose dna.js utilities to be callbacks from
 
 // Application
 const todo = {
-   add: () => {  //create a task
+   add() {  //create a task
       const task = {
          title: $('#task-title').val(),
          done:  false
          };
       dna.clone('task', task, { fade: true });
       },
-   setup: () => {
+   setup() {
       $('#task-title').val('Launch 🚀');
       const task = {  //start with one task
          title: 'Check out: 🧬 dna.js.org',
