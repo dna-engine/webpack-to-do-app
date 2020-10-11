@@ -9,16 +9,16 @@ module.exports = {
    entry: ['./src/index.html', './src/js/app.js'],
    output: {
       filename: 'bundle.js',
-      path:     path.resolve(__dirname, 'dist')
+      path:     path.resolve(__dirname, 'dist'),
       },
    module: {
       rules: [
          { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
-         { test: /\.html$/, loader: 'raw-loader' }
-         ]
+         { test: /\.html$/, loader: 'raw-loader' },
+         ],
       },
    plugins: [
       new MiniCssExtractPlugin({ filename: 'bundle.css' }),
-      new HtmlWebpackPlugin({ template: 'src/index.html' })
-      ]
+      new HtmlWebpackPlugin({ template: 'src/index.html' }),
+      ],
    };
