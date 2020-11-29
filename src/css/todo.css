@@ -1,24 +1,36 @@
 /* dnajs-webpack-to-do-app */
 
-.tasks .task {
+.tasks {
+   padding-top: 10px;
+   }
+.tasks >.task {
+   display: flex;
+   justify-content: space-between;
    max-width: 400px;
    background-color: lightblue;
    padding: 8px 10px;
-   margin-top: 5px;
+   margin-bottom: 5px;
    }
-.tasks .task span {
+.tasks >.task >label {
+   display: flex;
+   align-items: center;
+   }
+.tasks >.task >label >input {
+   font-size: 2rem;
+   }
+.tasks >.task >label >span {
+   padding-left: 10px;
    transition: color 400ms;
    }
-.tasks .task .strike {
-   text-decoration: line-through;
-   color: gray;
-   }
-.tasks .task button {
-   float: right;
+.tasks >.task >nav >button {
    transition: opacity 400ms;
    }
-.tasks .task:first-of-type button:nth-child(4),
-.tasks .task:last-of-type  button:nth-child(3) {
+.tasks >.task:first-of-type >nav >button:nth-child(2),
+.tasks >.task:last-of-type  >nav >button:nth-child(1) {
    opacity: 0.5;
    pointer-events: none;
+   }
+.tasks >.task.done >label >span {
+   text-decoration: line-through;
+   color: gray;
    }

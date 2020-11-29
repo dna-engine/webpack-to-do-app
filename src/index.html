@@ -12,17 +12,19 @@
          <h1>To Do List</h1>
       </header>
       <main data-on-load=todo.setup>
-         <input id=task-title data-enter-key=todo.add autofocus>
+         <input type=text id=task-title data-enter-key=todo.add autofocus>
          <button data-click=todo.add>Add Task</button>
          <div class=tasks>
-            <div id=task class=dna-template>
+            <div id=task class=dna-template data-class=~~done,done~~>
                <label>
                   <input type=checkbox data-prop-checked=~~done~~>
-                  <span data-class=~~done,strike~~>~~title~~</span>
+                  <span>~~title~~</span>
                </label>
-               <button data-click=dna.bye>&times;</button>
-               <button data-click=dna.down>&darr;</button>
-               <button data-click=dna.up>&uarr;</button>
+               <nav>
+                  <button data-click=dna.down>&darr;</button>
+                  <button data-click=dna.up>&uarr;</button>
+                  <button data-click=dna.bye>&times;</button>
+               </nav>
             </div>
          </div>
          <p data-placeholder=task>Hooray, nothing to do!</p>

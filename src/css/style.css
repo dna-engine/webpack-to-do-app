@@ -4,7 +4,15 @@ body {
    font-family: system-ui, sans-serif;
    margin: 30px;
    }
-body input {
+main input[type=text] {
+   vertical-align: middle;
    font-size: 1.2rem;
    background-color: aliceblue;
+   padding: 3px 8px;
+   }
+main button {
+   font-weight: bold;
+   border: none;
+   border-radius: 5px;
+   padding: 6px 10px;
    }
