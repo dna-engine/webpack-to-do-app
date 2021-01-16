@@ -1,24 +1,18 @@
 // dnajs-webpack-to-do-app
 
-const path =                 require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin =    require('html-webpack-plugin');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = {
+const webpackConfig = {
    mode: 'development',
-   entry: ['./src/index.html', './src/js/app.js'],
-   output: {
-      filename: 'bundle.js',
-      path:     path.resolve(__dirname, 'dist'),
-      },
+   entry: './src/js/app.js',
    module: {
-      rules: [
-         { test: /\.css$/, use: [MiniCssExtractPlugin.loader, 'css-loader'] },
-         { test: /\.html$/, loader: 'raw-loader' },
-         ],
+      rules: [{ test: /\.css$/, use: ['style-loader', 'css-loader'] }],
       },
    plugins: [
-      new MiniCssExtractPlugin({ filename: 'bundle.css' }),
       new HtmlWebpackPlugin({ template: 'src/index.html' }),
       ],
+   output: { filename: 'main.js', path: path.resolve(__dirname, 'dist') },
    };
+
+module.exports = webpackConfig;

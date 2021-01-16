@@ -1,19 +1,16 @@
 // dnajs-webpack-to-do-app
 
-// bundle.css
-require('dna.js/dist/dna.css');
-require('../css/style.css');
-require('../css/todo.css');
-
-// js libraries
-const $ =   require('jquery');
-const dna = require('dna.js')(window, $);
-dna.registerContext('dna', dna);  //expose dna.js utilities to be callbacks from web page
+// Imports
+import 'dna.js/dist/dna.css';
+import '../css/style.css';
+import '../css/todo.css';
+import $ from 'jquery';
+import 'dna.js';
 
 // Application
 const todo = {
 
-   add() {  //create a task
+   add() {  //create a new task
       const task = {
          title: $('#task-title').val(),
          done:  false,
@@ -21,9 +18,9 @@ const todo = {
       dna.clone('task', task, { fade: true });
       },
 
-   setup() {
+   setup() {  //create initial default task
       $('#task-title').val('Launch 🚀');
-      const task = {  //start with one task
+      const task = {
          title: 'Check out: 🧬 dna.js.org',
          done:  false,
          };
@@ -32,4 +29,6 @@ const todo = {
 
    };
 
+// Initialization
+const dna = window.dna.initGlobal(window, $);
 dna.registerContext('todo', todo);  //expose application functions to be callbacks from web page
