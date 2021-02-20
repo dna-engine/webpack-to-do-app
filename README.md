@@ -25,18 +25,22 @@ dnajs-webpack-to-do-app/
 ```
 
 [webpack](https://webpack.js.org) treats the [dna.js](https://dnajs.org) library as a module.&nbsp;
-Use `require` statements in your application to pull in the library's CSS and JavaScript:
+Use `import` statements in your application to pull in the library's CSS and JavaScript:
 ```javascript
-require('dna.js/dist/dna.css');
-const $ =   require('jquery');
-const dna = require('dna.js')(window, $);
+// Imports
+import 'dna.js/dist/dna.css';
+import $ from 'jquery';
+import 'dna.js';
+
+// Initialization
+const dna = window.dna.initGlobal(window, $);
 ```
 
 Then use `dna.registerContext(appName, appObject)` to expose your application so its functions can
 be used as callbacks from web pages:
 ```javascript
 const myApp = {
-   doSomething: () => { ... }
+   doSomething() { ... }
    };
 dna.registerContext('myApp', myApp);
 ```

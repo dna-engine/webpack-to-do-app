@@ -35,11 +35,11 @@
    },
    "devDependencies": {
       "css-loader": "~5.0",
-      "html-webpack-plugin": "~5.0.0-beta.5",
+      "html-webpack-plugin": "~5.2",
       "jshint": "~2.12",
       "rimraf": "~3.0",
       "style-loader": "~2.0",
-      "webpack": "~5.15",
-      "webpack-cli": "~4.3"
+      "webpack": "~5.23",
+      "webpack-cli": "~4.5"
    }
 }
