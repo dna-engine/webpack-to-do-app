@@ -39,7 +39,7 @@
       "jshint": "~2.12",
       "rimraf": "~3.0",
       "style-loader": "~2.0",
-      "webpack": "~5.23",
+      "webpack": "~5.24",
       "webpack-cli": "~4.5"
    }
 }
