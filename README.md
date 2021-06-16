@@ -5,7 +5,7 @@ _Sample "To Do" application powered by dna.js and built with webpack_
 
 [![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://dnajs.org/license)
 [![Vulnerabilities](https://snyk.io/test/github/dnajs/dnajs-webpack-to-do-app/badge.svg)](https://snyk.io/test/github/dnajs/dnajs-webpack-to-do-app)
-[![Build](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app.svg)](https://travis-ci.org/dnajs/dnajs-webpack-to-do-app)
+[![Build](https://github.com/dnajs/dnajs-webpack-to-do-app/workflows/build/badge.svg)](https://github.com/dnajs/dnajs-webpack-to-do-app/actions?query=workflow%3Abuild)
 
 Build the project by running `build.sh.command` or by using the commands:
 ```

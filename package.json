@@ -36,10 +36,10 @@
    "devDependencies": {
       "css-loader": "~5.2",
       "html-webpack-plugin": "~5.3",
-      "jshint": "~2.12",
+      "jshint": "~2.13",
       "rimraf": "~3.0",
       "style-loader": "~2.0",
-      "webpack": "~5.35",
-      "webpack-cli": "~4.6"
+      "webpack": "~5.39",
+      "webpack-cli": "~4.7"
    }
 }
