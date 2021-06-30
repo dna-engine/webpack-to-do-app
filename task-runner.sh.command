@@ -30,7 +30,7 @@ buildProject() {
    echo "webpack.config.js:"
    npm test
    echo
-   echo "Dist folder:"
+   echo "Distribution folder:"
    cd dist
    ls -o
    sleep 2
