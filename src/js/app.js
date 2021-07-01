@@ -1,11 +1,11 @@
 // dnajs-webpack-to-do-app
 
 // Imports
-import 'dna.js/dist/dna.css';
+import 'dna.js/dna.css';
 import '../css/style.css';
 import '../css/todo.css';
 import $ from 'jquery';
-import 'dna.js';
+import { dna } from 'dna.js';
 
 // Application
 const todo = {
@@ -30,5 +30,5 @@ const todo = {
    };
 
 // Initialization
-const dna = window.dna.initGlobal(window, $);
+dna.initGlobal(window, $);
 dna.registerContext('todo', todo);  //expose application functions to be callbacks from web page
