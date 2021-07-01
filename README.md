@@ -19,7 +19,6 @@ The build process creates a `dist` folder:
 ```
 dnajs-webpack-to-do-app/
    dist/
-      bundle.css
       bundle.js
       index.html
 ```

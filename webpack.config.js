@@ -12,7 +12,7 @@ const webpackConfig = {
    plugins: [
       new HtmlWebpackPlugin({ template: 'src/index.html' }),
       ],
-   output: { filename: 'main.js', path: path.resolve(__dirname, 'dist') },
+   output: { filename: 'bundle.js', path: path.resolve(__dirname, 'dist') },
    };
 
 module.exports = webpackConfig;
