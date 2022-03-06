@@ -3,7 +3,7 @@
    "description": "Sample To Do application powered by dna.js and built with webpack",
    "version": "1.0.0",
    "license": "MIT",
-   "main": "app.js",
+   "main": "src/js/app.js",
    "repository": "github:dnajs/dnajs-webpack-to-do-app",
    "homepage": "https://github.com/dnajs/dnajs-webpack-to-do-app",
    "bugs": "https://github.com/dnajs/dnajs-webpack-to-do-app/issues",
@@ -23,10 +23,12 @@
       "undef": true,
       "unused": true,
       "browser": true,
+      "mocha": true,
       "node": true
    },
    "scripts": {
-      "test": "jshint . --exclude node_modules,dist && rimraf dist **/.DS_Store && webpack",
+      "pretest": "jshint . --exclude node_modules,dist && rimraf dist **/.DS_Store && webpack",
+      "test": "mocha spec/*.spec.mjs",
       "start": "npm test && open dist/index.html"
    },
    "dependencies": {
@@ -34,12 +36,14 @@
       "jquery": "~3.6"
    },
    "devDependencies": {
-      "css-loader": "~6.6",
+      "assert-deep-strict-equal": "~1.0",
+      "css-loader": "~6.7",
       "html-webpack-plugin": "~5.5",
       "jshint": "~2.13",
+      "mocha": "~9.2",
       "rimraf": "~3.0",
       "style-loader": "~3.3",
-      "webpack": "~5.68",
+      "webpack": "~5.70",
       "webpack-cli": "~4.9"
    }
 }
