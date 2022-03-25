@@ -32,7 +32,7 @@
       "start": "npm test && open dist/index.html"
    },
    "dependencies": {
-      "dna.js": "~1.9",
+      "dna.js": "~2.0",
       "jquery": "~3.6"
    },
    "devDependencies": {
