@@ -32,7 +32,7 @@ import $ from 'jquery';
 import 'dna.js';
 
 // Initialization
-const dna = window.dna.initGlobal(window, $);
+const dna = globalThis.dna.initGlobal(window, $);
 ```
 
 Then use `dna.registerContext(appName, appObject)` to expose your application so its functions can
