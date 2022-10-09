@@ -1,5 +1,5 @@
-/* dnajs-webpack-to-do-app */
+/* webpack-to-do-app */
 
-@import "dna.js/dna.css";
+@import "dna-engine/dna-engine.css";
 @import "style";
 @import "todo";

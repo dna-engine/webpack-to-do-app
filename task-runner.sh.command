@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# dnajs-webpack-to-do-app
+# webpack-to-do-app
 #
 # To make this file runnable:
 #     $ chmod +x build.sh.command
 
-banner="dnajs-webpack-to-do-app"
+banner="webpack-to-do-app"
 projectHome=$(cd $(dirname $0); pwd)
 
 setupTools() {

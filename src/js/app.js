@@ -1,9 +1,9 @@
-// dnajs-webpack-to-do-app
+// webpack-to-do-app
 
 // Imports
-import '../css/app.css';
+import { dna } from 'dna-engine';
 import $ from 'jquery';
-import { dna } from 'dna.js';
+import '../css/app.css';
 
 // Application
 const todo = {
@@ -21,7 +21,7 @@ const todo = {
       // Creates initial default task.
       $('#task-title').val('Launch 🚀');
       const task = {
-         title: 'Check out: 🧬 dna.js.org',
+         title: 'Check out: 🧬 dna-engine.org',
          done:  false,
          };
       dna.clone('task', task);

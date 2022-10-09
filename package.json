@@ -1,16 +1,16 @@
 {
-   "name": "dnajs-webpack-to-do-app",
-   "description": "Sample To Do application powered by dna.js and built with webpack",
+   "name": "webpack-to-do-app",
+   "description": "Sample To Do application powered by dna-engine and built with webpack",
    "version": "1.0.0",
    "license": "MIT",
    "main": "src/js/app.js",
-   "repository": "github:dnajs/dnajs-webpack-to-do-app",
-   "homepage": "https://github.com/dnajs/dnajs-webpack-to-do-app",
-   "bugs": "https://github.com/dnajs/dnajs-webpack-to-do-app/issues",
-   "docs": "https://dnajs.org/docs",
+   "repository": "github:dna-engine/webpack-to-do-app",
+   "homepage": "https://github.com/dna-engine/webpack-to-do-app",
+   "bugs": "https://github.com/dna-engine/webpack-to-do-app/issues",
+   "docs": "https://dna-engine.org/docs",
    "author": "Center Key (https://centerkey.com)",
    "keywords": [
-      "dnajs",
+      "dna-engine",
       "webpack",
       "todo",
       "nodejs",
@@ -32,7 +32,7 @@
       "start": "npm test && open dist/index.html"
    },
    "dependencies": {
-      "dna.js": "~2.1",
+      "dna-engine": "~2.2",
       "jquery": "~3.6"
    },
    "devDependencies": {

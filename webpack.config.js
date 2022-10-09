@@ -1,4 +1,4 @@
-// dnajs-webpack-to-do-app
+// webpack-to-do-app
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');

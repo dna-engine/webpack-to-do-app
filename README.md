@@ -1,15 +1,15 @@
-# dnajs-webpack-to-do-app
-<img src=https://dnajs.org/graphics/dnajs-logo.png align=right width=160 alt=logo>
+# webpack-to-do-app
+<img src=https://dna-engine.org/graphics/dna-logo.png align=right width=160 alt=logo>
 
-_Sample "To Do" application powered by dna.js and built with webpack_
+_Sample "To Do" application powered by dna-engine and built with webpack_
 
-[![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://dnajs.org/license)
-[![Vulnerabilities](https://snyk.io/test/github/dnajs/dnajs-webpack-to-do-app/badge.svg)](https://snyk.io/test/github/dnajs/dnajs-webpack-to-do-app)
-[![Build](https://github.com/dnajs/dnajs-webpack-to-do-app/workflows/build/badge.svg)](https://github.com/dnajs/dnajs-webpack-to-do-app/actions/workflows/run-spec-on-push.yaml)
+[![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://dna-engine.org/license)
+[![Vulnerabilities](https://snyk.io/test/github/dna-engine/webpack-to-do-app/badge.svg)](https://snyk.io/test/github/dna-engine/webpack-to-do-app)
+[![Build](https://github.com/dna-engine/webpack-to-do-app/workflows/build/badge.svg)](https://github.com/dna-engine/webpack-to-do-app/actions/workflows/run-spec-on-push.yaml)
 
 Build the project by running `build.sh.command` or by using the commands:
 ```
-$ cd dnajs-webpack-to-do-app
+$ cd webpack-to-do-app
 $ npm install
 $ npm test
 $ open dist/index.html
@@ -17,19 +17,19 @@ $ open dist/index.html
 
 The build process creates a `dist` folder:
 ```
-dnajs-webpack-to-do-app/
+webpack-to-do-app/
    dist/
       bundle.js
       index.html
 ```
 
-[webpack](https://webpack.js.org) treats the [dna.js](https://dnajs.org) library as a module.&nbsp;
+[webpack](https://webpack.js.org) treats the [dna-engine](https://dna-engine.org) library as a module.&nbsp;
 Use `import` statements in your application to pull in the library's CSS and JavaScript:
 ```javascript
 // Imports
-import 'dna.js/dist/dna.css';
+import 'dna-engine/dist/dna-engine.css';
 import $ from 'jquery';
-import 'dna.js';
+import 'dna-engine';
 
 // Initialization
 const dna = globalThis.dna.initGlobal(window, $);
