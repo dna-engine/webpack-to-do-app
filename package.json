@@ -40,10 +40,10 @@
       "css-loader": "~6.7",
       "html-webpack-plugin": "~5.5",
       "jshint": "~2.13",
-      "mocha": "~10.0",
+      "mocha": "~10.1",
       "rimraf": "~3.0",
       "style-loader": "~3.3",
-      "webpack": "~5.74",
-      "webpack-cli": "~4.10"
+      "webpack": "~5.75",
+      "webpack-cli": "~5.0"
    }
 }
