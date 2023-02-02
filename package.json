@@ -32,7 +32,7 @@
       "start": "npm test && open dist/index.html"
    },
    "dependencies": {
-      "dna-engine": "~2.2",
+      "dna-engine": "~2.3",
       "jquery": "~3.6"
    },
    "devDependencies": {
@@ -41,7 +41,7 @@
       "html-webpack-plugin": "~5.5",
       "jshint": "~2.13",
       "mocha": "~10.2",
-      "rimraf": "~3.0",
+      "rimraf": "3",
       "style-loader": "~3.3",
       "webpack": "~5.75",
       "webpack-cli": "~5.0"
