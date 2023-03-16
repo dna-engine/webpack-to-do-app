@@ -27,7 +27,7 @@
       "node": true
    },
    "scripts": {
-      "pretest": "jshint . --exclude-path .gitignore && rimraf dist **/.DS_Store && webpack",
+      "pretest": "jshint . --exclude-path .gitignore && rimraf dist && webpack",
       "test": "mocha spec/*.spec.mjs",
       "start": "npm test && open dist/index.html"
    },
@@ -41,9 +41,9 @@
       "html-webpack-plugin": "~5.5",
       "jshint": "~2.13",
       "mocha": "~10.2",
-      "rimraf": "3",
+      "rimraf": "~4.4",
       "style-loader": "~3.3",
-      "webpack": "~5.75",
+      "webpack": "~5.76",
       "webpack-cli": "~5.0"
    }
 }
