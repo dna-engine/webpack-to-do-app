@@ -28,11 +28,10 @@ Use `import` statements in your application to pull in the library's CSS and Jav
 ```javascript
 // Imports
 import 'dna-engine/dist/dna-engine.css';
-import $ from 'jquery';
 import 'dna-engine';
 
 // Initialization
-const dna = globalThis.dna.initGlobal(window, $);
+const dna = globalThis.dna.initGlobal(window);
 ```
 
 Then use `dna.registerContext(appName, appObject)` to expose your application so its functions can

@@ -12,8 +12,8 @@
          <h1>To Do List</h1>
       </header>
       <main data-on-load=todo.setup>
-         <input type=text id=task-title data-enter-key=todo.add autofocus>
-         <button data-click=todo.add>Add Task</button>
+         <input type=text id=task-title data-on-enter-key=todo.add autofocus>
+         <button data-on-click=todo.add>Add Task</button>
          <div class=tasks>
             <div id=task class=dna-template data-class=~~done,done~~>
                <label>
@@ -21,9 +21,9 @@
                   <span>~~title~~</span>
                </label>
                <nav>
-                  <button data-click=dna.down>&darr;</button>
-                  <button data-click=dna.up>&uarr;</button>
-                  <button data-click=dna.bye>&times;</button>
+                  <button data-on-click=dna.down>&darr;</button>
+                  <button data-on-click=dna.up>&uarr;</button>
+                  <button data-on-click=dna.bye>&times;</button>
                </nav>
             </div>
          </div>
