@@ -4,7 +4,6 @@
 _Sample "To Do" application powered by dna-engine and built with webpack_
 
 [![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://dna-engine.org/license)
-[![Vulnerabilities](https://snyk.io/test/github/dna-engine/webpack-to-do-app/badge.svg)](https://snyk.io/test/github/dna-engine/webpack-to-do-app)
 [![Build](https://github.com/dna-engine/webpack-to-do-app/workflows/build/badge.svg)](https://github.com/dna-engine/webpack-to-do-app/actions/workflows/run-spec-on-push.yaml)
 
 Build the project by running `build.sh.command` or by using the commands:
