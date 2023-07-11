@@ -3,6 +3,8 @@
    "description": "Sample To Do application powered by dna-engine and built with webpack",
    "version": "1.0.0",
    "license": "MIT",
+   "type": "module",
+   "module": "src/js/app.js",
    "main": "src/js/app.js",
    "repository": "github:dna-engine/webpack-to-do-app",
    "homepage": "https://github.com/dna-engine/webpack-to-do-app",
@@ -26,9 +28,16 @@
       "mocha": true,
       "node": true
    },
+   "runScriptsConfig": {
+      "tasks": [
+         "jshint . --exclude-path .gitignore",
+         "rimraf dist",
+         "webpack"
+      ]
+   },
    "scripts": {
-      "pretest": "jshint . --exclude-path .gitignore && rimraf dist && webpack",
-      "test": "mocha spec/*.spec.mjs",
+      "pretest": "run-scripts tasks",
+      "test": "mocha spec/*.spec.js",
       "start": "npm test && open dist/index.html"
    },
    "dependencies": {
@@ -41,6 +50,7 @@
       "jshint": "~2.13",
       "mocha": "~10.2",
       "rimraf": "~5.0",
+      "run-scripts-util": "~1.2",
       "style-loader": "~3.3",
       "webpack": "~5.88",
       "webpack-cli": "~5.1"
