@@ -6,7 +6,10 @@
    "type": "module",
    "module": "src/js/app.js",
    "main": "src/js/app.js",
-   "repository": "github:dna-engine/webpack-to-do-app",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dna-engine/webpack-to-do-app.git"
+   },
    "homepage": "https://github.com/dna-engine/webpack-to-do-app",
    "bugs": "https://github.com/dna-engine/webpack-to-do-app/issues",
    "docs": "https://dna-engine.org/docs",
@@ -38,7 +41,8 @@
    "scripts": {
       "pretest": "run-scripts tasks",
       "test": "mocha spec/*.spec.js",
-      "start": "npm test && open dist/index.html"
+      "prestart": "npm test",
+      "start": "open dist/index.html"
    },
    "dependencies": {
       "dna-engine": "~3.0"
