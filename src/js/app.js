@@ -15,6 +15,7 @@ const todo = {
          done:  false,
          };
       dna.clone('task', task, { fade: true });
+      console.log(dna.getModels('task'));  //display array of tasks in the js console
       },
 
    setup() {
@@ -31,5 +32,5 @@ const todo = {
    };
 
 // Initialization
-dna.initGlobal(window);
 dna.registerContext('todo', todo);  //expose application functions to be callbacks from web page
+dna.dom.onReady(todo.setup);

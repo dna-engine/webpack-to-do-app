@@ -56,7 +56,7 @@
       "rimraf": "~5.0",
       "run-scripts-util": "~1.2",
       "style-loader": "~3.3",
-      "webpack": "~5.88",
+      "webpack": "~5.89",
       "webpack-cli": "~5.1"
    }
 }

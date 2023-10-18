@@ -28,18 +28,22 @@ Use `import` statements in your application to pull in the library's CSS and Jav
 // Imports
 import 'dna-engine/dist/dna-engine.css';
 import 'dna-engine';
-
-// Initialization
-const dna = globalThis.dna.initGlobal(window);
 ```
 
 Then use `dna.registerContext(appName, appObject)` to expose your application so its functions can
 be used as callbacks from web pages:
 ```javascript
 const myApp = {
-   doSomething() { ... }
+   doSomething(elem) {
+      console.log('myApp.doSomething() was called.');
+      },
    };
-dna.registerContext('myApp', myApp);
+
+dna.registerContext('myApp', myApp);  //give dna-engine access to your code
+```
+Now in the HTML you can wire up a button to call the function:
+```html
+<button data-on-click=myApp.doSomething>Do Something</button>
 ```
 
 See the example code in [app.js](src/js/app.js).
