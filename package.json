@@ -5,7 +5,7 @@
    "license": "MIT",
    "type": "module",
    "module": "src/js/app.js",
-   "main": "src/js/app.js",
+   "exports": "./src/js/app.js",
    "repository": {
       "type": "git",
       "url": "git+https://github.com/dna-engine/webpack-to-do-app.git"
@@ -45,18 +45,18 @@
       "start": "open dist/index.html"
    },
    "dependencies": {
-      "dna-engine": "~3.0"
+      "dna-engine": "~3.1"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.1",
-      "css-loader": "~6.8",
-      "html-webpack-plugin": "~5.5",
+      "css-loader": "~6.9",
+      "html-webpack-plugin": "~5.6",
       "jshint": "~2.13",
       "mocha": "~10.2",
       "rimraf": "~5.0",
       "run-scripts-util": "~1.2",
       "style-loader": "~3.3",
-      "webpack": "~5.89",
+      "webpack": "~5.90",
       "webpack-cli": "~5.1"
    }
 }
