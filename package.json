@@ -45,7 +45,7 @@
       "start": "open dist/index.html"
    },
    "dependencies": {
-      "dna-engine": "~3.1"
+      "dna-engine": "~3.2"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.2",
