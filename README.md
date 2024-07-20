@@ -23,11 +23,18 @@ webpack-to-do-app/
 ```
 
 [webpack](https://webpack.js.org) treats the [dna-engine](https://dna-engine.org) library as a module.&nbsp;
-Use `import` statements in your application to pull in the library's CSS and JavaScript:
+Use `import` statements in your application to pull in the library's JavaScript and CSS:
+
+**app.js**
 ```javascript
 // Imports
-import 'dna-engine/dist/dna-engine.css';
-import 'dna-engine';
+import { dna } from 'dna-engine';
+import '../css/app.css';
+```
+**app.css**
+```css
+/* Imports */
+@import "dna-engine/dna-engine.css";
 ```
 
 Then use `dna.registerContext(appName, appObject)` to expose your application so its functions can
