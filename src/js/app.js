@@ -15,7 +15,7 @@ const todo = {
          done:  false,
          };
       dna.clone('task', task, { fade: true });
-      console.log(dna.getModels('task'));  //display array of tasks in the js console
+      console.info(dna.getModels('task'));  //display array of tasks in the js console
       },
 
    setup() {

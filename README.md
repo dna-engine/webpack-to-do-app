@@ -42,7 +42,7 @@ be used as callbacks from web pages:
 ```javascript
 const myApp = {
    doSomething(elem) {
-      console.log('myApp.doSomething() was called.');
+      console.info('myApp.doSomething() was called.');
       },
    };
 
