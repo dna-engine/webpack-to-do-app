@@ -40,12 +40,12 @@
    },
    "scripts": {
       "pretest": "run-scripts tasks",
-      "test": "mocha spec/*.spec.js",
+      "test": "mocha spec",
       "prestart": "npm test",
       "start": "open dist/index.html"
    },
    "dependencies": {
-      "dna-engine": "~3.2"
+      "dna-engine": "~3.3"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.2",
@@ -56,7 +56,7 @@
       "rimraf": "~6.0",
       "run-scripts-util": "~1.3",
       "style-loader": "~4.0",
-      "webpack": "~5.100",
+      "webpack": "~5.101",
       "webpack-cli": "~6.0"
    }
 }
