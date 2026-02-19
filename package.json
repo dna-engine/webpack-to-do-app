@@ -32,33 +32,35 @@
       "node": true
    },
    "runScriptsConfig": {
-      "tasks": [
-         "jshint . --exclude-path .gitignore",
-         "rimraf dist",
+      "clean": [
+         "rimraf dist"
+      ],
+      "lint": [
+         "jshint . --exclude-path .gitignore"
+      ],
+      "build": [
          "webpack"
       ]
    },
    "scripts": {
-      "pretest": "run-scripts tasks",
+      "pretest": "run-scripts clean lint build",
       "test": "mocha spec",
       "posttest": "html-validator src",
-      "prestart": "npm test",
-      "start": "open dist/index.html"
-   },
-   "dependencies": {
-      "dna-engine": "~3.3"
+      "start": "npm test && open dist/index.html"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.2",
       "css-loader": "~7.1",
+      "dna-engine": "~3.3",
       "html-webpack-plugin": "~5.6",
       "jshint": "~2.13",
       "mocha": "~11.7",
-      "rimraf": "~6.0",
+      "rimraf": "~6.1",
       "run-scripts-util": "~1.3",
       "style-loader": "~4.0",
-      "w3c-html-validator": "~1.9",
-      "webpack": "~5.102",
+      "w3c-html-validator": "~2.2",
+      "web-ignition": "~2.5",
+      "webpack": "~5.105",
       "webpack-cli": "~6.0"
    }
 }

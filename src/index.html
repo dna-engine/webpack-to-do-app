@@ -1,34 +1,38 @@
 <!doctype html>
 <html lang=en>
+<!-- - - - - - - - - - -->
+<!-- webpack-to-do-app -->
+<!-- MIT License       -->
+<!-- - - - - - - - - - -->
+<head>
+   <meta charset=utf-8>
+   <title>To Do List</title>
+   <link rel=icon href=https://centerkey.com/graphics/bookmark-icon.png>
+</head>
+<body>
 
-   <head>
-      <meta charset=utf-8>
-      <title>To Do List</title>
-      <link rel=icon href=https://centerkey.com/graphics/bookmark-icon.png>
-   </head>
+<header>
+   <h1>To Do List</h1>
+</header>
 
-   <body>
-      <header>
-         <h1>To Do List</h1>
-      </header>
-      <main>
-         <input type=text id=task-title data-on-enter-key=todo.add autofocus>
-         <button data-on-click=todo.add>Add Task</button>
-         <div class=tasks>
-            <div id=task class=dna-template data-class=~~done,done~~>
-               <label>
-                  <input type=checkbox data-prop-checked=~~done~~>
-                  <span>~~title~~</span>
-               </label>
-               <nav>
-                  <button data-on-click=dna.down>&darr;</button>
-                  <button data-on-click=dna.up>&uarr;</button>
-                  <button data-on-click=dna.bye>&times;</button>
-               </nav>
-            </div>
-         </div>
-         <p data-placeholder=task>Hooray, nothing to do!</p>
-      </main>
-   </body>
+<main>
+   <input type=text id=task-title data-on-enter-key=todo.add autofocus>
+   <button data-on-click=todo.add>Add Task</button>
+   <menu class=tasks>
+      <li id=task class=dna-template data-class=~~done,done~~>
+         <label>
+            <input type=checkbox data-prop-checked=~~done~~>
+            <span>~~title~~</span>
+         </label>
+         <nav>
+            <button data-on-click=dna.down>&darr;</button>
+            <button data-on-click=dna.up>&uarr;</button>
+            <button data-on-click=dna.bye>&times;</button>
+         </nav>
+      </li>
+   </menu>
+   <p data-placeholder=task>Hooray, nothing to do!</p>
+</main>
 
+</body>
 </html>

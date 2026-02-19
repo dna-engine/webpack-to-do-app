@@ -1,4 +1,5 @@
 // webpack-to-do-app
+// MIT License
 
 // Imports
 import { dna } from 'dna-engine';

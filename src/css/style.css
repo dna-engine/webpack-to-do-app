@@ -1,20 +1,13 @@
 /* webpack-to-do-app */
+/* MIT License       */
 
 body {
-   font-family: system-ui, sans-serif;
-   margin: 30px;
+   margin: 0px 20px;
+   }
+body >header >h1 {
+   text-align: left;
    }
 main input[type=text] {
-   vertical-align: middle;
-   font-size: 1.2rem;
-   background-color: aliceblue;
-   padding: 3px 8px;
-   margin-right: 5px;
-   }
-main button {
-   font-size: 1.1rem;
-   font-weight: bold;
-   border: none;
-   border-radius: 5px;
-   padding: 6px 10px;
+   max-width: 15em;
+   margin-right: 10px;
    }
