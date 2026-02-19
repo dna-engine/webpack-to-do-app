@@ -26,7 +26,7 @@ webpack-to-do-app/
 
 ## B) Online Example
 Instead of running locally, you can check out this version:<br>
-[https://dna-engine.github.io/webpack-to-do-app](dna-engine.github.io/webpack-to-do-app)
+[dna-engine.github.io/webpack-to-do-app](https://dna-engine.github.io/webpack-to-do-app/)
 
 ## C) Modules
 [webpack](https://webpack.js.org) treats the [dna-engine](https://dna-engine.org) library as a module.&nbsp;
