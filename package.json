@@ -33,7 +33,7 @@
    },
    "runScriptsConfig": {
       "clean": [
-         "rimraf dist"
+         "rimraf docs"
       ],
       "lint": [
          "jshint . --exclude-path .gitignore"
@@ -46,7 +46,7 @@
       "pretest": "run-scripts clean lint build",
       "test": "mocha spec",
       "posttest": "html-validator src",
-      "start": "npm test && open dist/index.html"
+      "start": "npm test && open docs/index.html"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.2",

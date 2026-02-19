@@ -9,7 +9,7 @@ const webpackConfig = {
    entry:   './src/js/app.js',
    module:  { rules: [{ test: /\.css$/, use: ['style-loader', 'css-loader'] }] },
    plugins: [new HtmlWebpackPlugin({ template: 'src/index.html' })],
-   output:  { filename: 'bundle.js', path: path.resolve('dist') },
+   output:  { filename: 'bundle.js', path: path.resolve('docs') },
    };
 
 export default webpackConfig;

@@ -15,7 +15,6 @@ setupTools() {
    echo $(echo $banner | sed s/./=/g)
    pwd
    test -d .git || { echo "Project must be in a git repository."; exit; }
-   git restore dist/* &>/dev/null
    git pull --ff-only
    echo
    echo "Node.js:"
@@ -32,13 +31,14 @@ buildProject() {
    echo "webpack.config.js:"
    npm test
    echo
-   echo "Distribution folder:"
-   cd dist
+   echo "Build output folder:"
+   cd docs
+   pwd
    ls -o
-   sleep 2
-   open index.html
    echo
    }
 
 setupTools
 buildProject
+sleep 2
+open $projectHome/docs/index.html

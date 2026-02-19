@@ -1,7 +1,7 @@
 # Downloaded and Generated Files
 /node_modules/
 /package-lock.json
-/dist/
+/docs/
 
 # Extraneous System Files
 .DS_Store

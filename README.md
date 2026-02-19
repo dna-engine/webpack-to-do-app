@@ -13,13 +13,13 @@ Build the project by running `build.sh.command` or by using the commands:
 $ cd webpack-to-do-app
 $ npm install
 $ npm test
-$ open dist/index.html
+$ open docs/index.html
 ```
 
-The build process creates a `dist` folder:
+The build process creates a `docs` folder:
 ```
 webpack-to-do-app/
-   dist/
+   docs/
       bundle.js
       index.html
 ```
