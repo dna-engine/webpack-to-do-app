@@ -2,7 +2,7 @@
 // MIT License
 
 // Imports
-import { dna } from 'dna-engine';
+import { dna } from 'dna-dom';
 import '../css/app.css';
 
 // Application
@@ -24,7 +24,7 @@ const todo = {
       const titleElem = globalThis.document.getElementById('task-title');
       titleElem.value = 'Launch 🚀';
       const task = {
-         title: 'Check out: 🧬 dna-engine.org',
+         title: 'Check out: 🧬 dna-dom.org',
          done:  false,
          };
       dna.clone('task', task);

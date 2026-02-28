@@ -1,6 +1,6 @@
 {
    "name": "webpack-to-do-app",
-   "description": "Sample To Do application powered by dna-engine and built with webpack",
+   "description": "Sample To Do application powered by dna-dom and built with webpack",
    "version": "1.0.0",
    "license": "MIT",
    "type": "module",
@@ -8,14 +8,14 @@
    "exports": "./src/js/app.js",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/dna-engine/webpack-to-do-app.git"
+      "url": "git+https://github.com/dna-dom/webpack-to-do-app.git"
    },
-   "homepage": "https://github.com/dna-engine/webpack-to-do-app",
-   "bugs": "https://github.com/dna-engine/webpack-to-do-app/issues",
-   "docs": "https://dna-engine.org/docs",
+   "homepage": "https://github.com/dna-dom/webpack-to-do-app",
+   "bugs": "https://github.com/dna-dom/webpack-to-do-app/issues",
+   "docs": "https://dna-dom.org/docs",
    "author": "Center Key (https://centerkey.com)",
    "keywords": [
-      "dna-engine",
+      "dna-dom",
       "webpack",
       "todo",
       "nodejs",
@@ -49,7 +49,7 @@
       "start": "npm test && open docs/index.html"
    },
    "dependencies": {
-      "dna-engine": "~3.3",
+      "dna-dom": "~3.3",
       "web-ignition": "~2.5"
    },
    "devDependencies": {

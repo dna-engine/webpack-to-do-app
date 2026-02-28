@@ -2,6 +2,6 @@
 /* MIT License       */
 
 @import "web-ignition/reset.min.css";
-@import "dna-engine/dna-engine.css";
+@import "dna-dom/dna-dom.css";
 @import "style";
 @import "todo";
